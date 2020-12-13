@@ -1,0 +1,24 @@
+{
+  "name": "qrcode-server",
+  "version": "0.1.0",
+  "description": "QRCode Generator Server",
+  "keywords": [
+    "qrcode",
+    "vercel",
+    "zce"
+  ],
+  "repository": "zce/qrcode-server",
+  "license": "MIT",
+  "author": "zce <w@zce.me> (https://zce.me)",
+  "renovate": {
+    "extends": [
+      "zce"
+    ]
+  },
+  "dependencies": {
+    "qrcode-svg": "^1.1.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^1.8.5"
+  }
+}

@@ -11,7 +11,7 @@ Respond to an QRCode SVG picture of you.
 #### Params
 
 - `text` - qrcode content text.
-- `url` - `text` alias
+- `url` - `text` alias.
 
 #### Examples
 

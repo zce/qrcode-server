@@ -15,7 +15,7 @@ Respond to an QRCode SVG picture of you.
 
 #### Examples
 
-`https://qc.vercel.app/?url=https://zce.me`
+`https://qrcode.zce.me/?url=https://zce.me`
 
 ## License
 

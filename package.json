@@ -16,9 +16,9 @@
     ]
   },
   "dependencies": {
-    "qrcode-svg": "^1.1.0"
+    "qrcode-svg": "1.1.0"
   },
   "devDependencies": {
-    "@vercel/node": "^1.8.5"
+    "@vercel/node": "1.8.5"
   }
 }

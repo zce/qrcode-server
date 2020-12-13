@@ -1,4 +1,4 @@
-# qc
+# qrcode-server
 
 > QRCode Generator Server
 

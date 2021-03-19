@@ -1,13 +1,9 @@
+import QRCode from 'qrcode-svg'
 import { VercelRequest, VercelResponse } from '@vercel/node'
 
 export default async (req: VercelRequest, res: VercelResponse): Promise<any> => {
-  const { name, host = 'zce.me' } = req.query // from querystring or pathinfo
-  // const { name, host = 'zce.me' } = req.body // from request body
-
-  if (name == null || name === '') {
-    // return if without redirect url.
-    return res.status(400).send({ message: 'Bad Request' })
-  }
-
-  res.send({ name, email: `${name}@${host}` })
+  const { text, url } = req.query
+  const content = (text ?? url).toString()
+  const qrcode = new QRCode({ content, padding: 0, join: true })
+  res.send(`<meta name="viewport" content="width=device-width"><img style="display:block;margin:auto" src="data:image/svg+xml;base64,${Buffer.from(qrcode.svg()).toString('base64')}">`)
 }

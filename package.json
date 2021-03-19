@@ -21,8 +21,11 @@
       "zce"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "qrcode-svg": "1.1.0"
+  },
   "devDependencies": {
+    "@types/qrcode-svg": "1.1.0",
     "@vercel/node": "1.9.1",
     "ts-standard": "10.0.0"
   }

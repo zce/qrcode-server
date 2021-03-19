@@ -167,45 +167,22 @@
   <header><h1>qrcode-server</h1></header>
 
   <main>
-    <section>
-      <h2>Introduction</h2>
-      <p>A QRCode generator services.</p>
-      <p><a href="https://github.com/zce/qrcode-server#readme">Getting started</a></p>
-    </section>
-
-    <section>
-      <h2>Playground</h2>
-      <form action="/api" method="post">
-        <label for="name">name</label>
-        <input name="name" id="name" placeholder="Input your username.">
-        <details>
-          <summary>Advanced settings</summary>
-          <div>
-            <label for="host">host</label>
-            <input name="host" id="host" placeholder="Input your email host.">
-            <small>more introduce.</small>
-          </div>
-        </details>
-        <button>Generate</button>
-      </form>
-    </section>
-
-    <section>
-      <h2>Endpoints</h2>
-      <h3>GET <code>/api</code></h3>
-      <p>Combine an email address.</p>
-      <pre><code>$ curl https://qrcode-server.vercel.app/api</code></pre>
-      <h4>Parameters</h4>
-      <ul>
-        <li><code>name</code>: email user name, alias: <code>username</code></li>
-        <li><code>host</code>: email host, default: <code>'zce.me'</code></li>
-      </ul>
-      <h4>Response</h4>
-      <pre><code>{
-  "name": "...",
-  "email": "..."
-}</code></pre>
-    </section>
+    <form action="/api">
+      <input name="url" placeholder="Input url.">
+      <details>
+        <summary>Endpoints</summary>
+        <div>
+          <h3>GET <code>/api</code></h3>
+          <p>Combine an email address.</p>
+          <pre><code>$ curl https://qrcode.zce.me/api</code></pre>
+          <h4>Parameters</h4>
+          <ul>
+            <li><code>text</code>: qrcode contents, alias: <code>url</code></li>
+          </ul>
+        </div>
+      </details>
+      <button>Generate</button>
+    </form>
   </main>
 
   <footer>

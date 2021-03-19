@@ -1,24 +1,29 @@
 {
   "name": "qrcode-server",
   "version": "0.1.0",
-  "description": "QRCode Generator Server",
+  "description": "A QRCode generator services.",
   "keywords": [
-    "qrcode",
-    "vercel",
+    "qrcode-server",
+    "serverless",
+    "lambda",
+    "api",
     "zce"
   ],
   "repository": "zce/qrcode-server",
   "license": "MIT",
   "author": "zce <w@zce.me> (https://zce.me)",
+  "scripts": {
+    "lint": "ts-standard --fix",
+    "develop": "npx vercel dev"
+  },
   "renovate": {
     "extends": [
       "zce"
     ]
   },
-  "dependencies": {
-    "qrcode-svg": "1.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@vercel/node": "1.8.5"
+    "@vercel/node": "1.9.1",
+    "ts-standard": "10.0.0"
   }
 }

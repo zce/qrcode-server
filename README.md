@@ -1,21 +1,34 @@
 # qrcode-server
 
-> QRCode Generator Server
+> A QRCode generator services.
 
 ## Endpoints
 
-### GET `/`
+### GET `/api`
 
-Respond to an QRCode SVG picture of you.
+Combine an email address.
 
-#### Params
+```shell
+$ curl https://qrcode-server.vercel.app/api
+```
 
-- `text` - qrcode content text.
-- `url` - `text` alias.
+#### Parameters
 
-#### Examples
+- `name`: email user name, alias: `username`
+- `host`: email host, default: `'zce.me'`
 
-`https://qrcode.zce.me/?url=https://zce.me`
+#### Response Type
+
+```json
+{
+  "name": "...",
+  "email": "..."
+}
+```
+
+## Related
+
+<!-- TODO: related projects -->
 
 ## License
 

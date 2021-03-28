@@ -4,31 +4,21 @@
 
 ## Endpoints
 
-### GET `/api`
+### GET `/`
 
-Combine an email address.
+Respond to an QRCode SVG picture of you.
 
 ```shell
-$ curl https://qrcode-server.vercel.app/api
+$ curl https://qrcode.zce.me -d "url=https://zce.me"
 ```
 
 #### Parameters
 
-- `name`: email user name, alias: `username`
-- `host`: email host, default: `'zce.me'`
+- `url`: qrcode contents, alias: `text`
 
 #### Response Type
 
-```json
-{
-  "name": "...",
-  "email": "..."
-}
-```
-
-## Related
-
-<!-- TODO: related projects -->
+Return different types of results according to accept.
 
 ## License
 

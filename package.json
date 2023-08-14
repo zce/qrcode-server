@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@types/qrcode-svg": "1.1.0",
-    "@vercel/node": "1.9.1",
+    "@vercel/node": "2.15.10",
     "ts-standard": "10.0.0"
   }
 }

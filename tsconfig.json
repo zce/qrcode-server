@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "CommonJS",
+    "target": "esnext",
+    "module": "esnext",
     "strict": true,
-    "esModuleInterop": true,
-    "pretty": true
+    "esModuleInterop": true
   }
 }

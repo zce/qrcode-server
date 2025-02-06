@@ -9,12 +9,12 @@
 Respond to an QRCode SVG picture of you.
 
 ```shell
-$ curl https://qrcode.zce.me -d "url=https://zce.me"
+$ curl https://qrcode.zce.me -d "text=https://zce.me"
 ```
 
 #### Parameters
 
-- `url`: qrcode contents, alias: `text`
+- `text`: qrcode contents, alias: `value` | `url` | `data` | `content`, required
 
 #### Response Type
 

@@ -10,23 +10,16 @@
     "zce"
   ],
   "repository": "zce/qrcode-server",
+  "type": "module",
   "license": "MIT",
   "author": "zce <w@zce.me> (https://zce.me)",
   "scripts": {
-    "lint": "ts-standard --fix",
     "develop": "npx vercel dev"
   },
-  "renovate": {
-    "extends": [
-      "zce"
-    ]
-  },
   "dependencies": {
-    "qrcode-svg": "1.1.0"
+    "qrcode": "1.5.4"
   },
   "devDependencies": {
-    "@types/qrcode-svg": "1.1.0",
-    "@vercel/node": "1.9.1",
-    "ts-standard": "10.0.0"
+    "@types/qrcode": "1.5.5"
   }
 }

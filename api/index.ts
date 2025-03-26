@@ -1,6 +1,6 @@
 import { toString } from 'qrcode'
 
-// export const config = {  runtime: 'edge' }
+export const config = {  runtime: 'edge' }
 
 export const GET =  async (request: Request) => {
   const { searchParams } = new URL(request.url)

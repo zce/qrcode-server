@@ -4,7 +4,7 @@ export const config = {  runtime: 'edge' }
 
 export const GET =  async (request: Request) => {
   const { searchParams } = new URL(request.url)
-  const input = searchParams.get('value') || searchParams.get('url') || searchParams.get('text') || searchParams.get('data') || searchParams.get('content')
+  const input = searchParams.get('v') || searchParams.get('value') || searchParams.get('url') || searchParams.get('text') || searchParams.get('data') || searchParams.get('content')
   if (!input) return new Response('Missing required parameter: value', { status: 400 })
 
   const size = searchParams.get('size') || '200'
